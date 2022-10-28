@@ -46,6 +46,12 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
   speechSynthesis.onvoiceschanged = populateVoices;
 }
 
+// Grab a reference to the 'Press to Talk' button
+const buttonClick = document.querySelector('button');
+
+// Grab a reference to the textarea element
+const textArea = document.getElementById('text-to-speak');
+
 /* Upon finished loading */
 window.addEventListener('DOMContentLoaded', init);
 
