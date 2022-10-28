@@ -36,10 +36,10 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 }
 
 // Grab a reference to the 'Press to Talk' button
-buttonClick = document.querySelector('button');
+const buttonClick = document.querySelector('button');
 
 // Grab a reference to the textarea element
-textArea = document.getElementById('text-to-speak');
+const textArea = document.getElementById('text-to-speak');
 
 /* Upon finished loading */
 window.addEventListener('DOMContentLoaded', init);
@@ -55,9 +55,7 @@ function init() {
       }
     }
     
-    utterThis.pitch = 1;
-    utterThis.volume = 1;
-    utterThis.rate = 1;
+    utterThis.volume = 50;
 
     synth.speak(utterThis);
   });
