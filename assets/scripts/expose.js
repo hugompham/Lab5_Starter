@@ -24,7 +24,7 @@ function init() {
   });
 
   // Change volume of slider changes icon and audio volume
-  document.getElementById('volume').addEventListener('change', (event) => {
+  document.getElementById('volume').addEventListener('input', (event) => {
     const volumeIcon = document.querySelector("div > img");
     const volumeAudio = document.querySelector("audio");
     if (event.target.value == 0){
